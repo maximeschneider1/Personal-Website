@@ -1,120 +1,155 @@
 html {
-    background-color: #FFEB3B;
-    font-family: 'Oswald', sans-serif !important;
+  background-color: #FFEB3B;
+  font-family: 'Oswald', sans-serif !important;
 
 
 }
 
-
-
-@media all and (max-device-width: 480px) { /* MOBILE */
-
-    #main {
-
-        background-color: #FFEB3B;
-    }
-
-    #presentation {
-        background-color: #FFEB3B;
-        color: black;
-        height: 80vh;
-        width: 100%;
-        margin-bottom: 10vh;
-    }
-
-    #presentation div {
-        margin: 10%;
-
-    }
-
-    #presentation h1 {
-        font-size: 3em;
-        margin-top: 20vh;
-    }
-
-    #presentation p {
-        font-family: 'Oswald', sans-serif;
-        font-family: 'Lora', serif;
-        font-size: 1.10em;
-    }
-
-
-    #presentation #copyright {
-        display: none;
-    }
-
-    #presentation p a {
-        color: black;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    .button {
-        display: inline-block;
-        border-radius: 4px;
-        background-color: black;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 1.5em;
-        padding: 10px;
-        width: 150px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 10px;
-
-      }
-
-      .button span {
-        cursor: pointer;
-      }
+canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */
 
 
 
-      #projects {
-        background-color: black;
-        PADDING-top: 5%;
-        margin-top: 100px;
-        height: 100vh;
-        width: 100%;
-    }
 
-    #projects div {
-        margin: 10%;
-        margin-top: 5%;
-        border-bottom: 3px solid white;
-        transition: 0.5s;
-    }
+@media all and (max-device-width: 480px) { /* MOBILE */ /* IPHONE 6/7/8 */
 
 
-    #projects h3 a {
-        color: #FFEB3B;
-        text-decoration: none;
-    }
 
-    #projects a {
-        color: #FFEB3B;
-        text-decoration: none;
-    }
-    #projects h3 {
-        color: #FFEB3B;
-    }
-    #projects p {
-        color: #FFF;
-    }
-    h1 {
-        font-family: 'Oswald-Bold', sans-serif;
+#particles-js{
+  position: absolute;
+  top: 0%;
+  height: 65%;
+  opacity: 0.9;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+  #main {
+
+      background-color: #FFEB3B;
+  }
+
+  #presentation {
+      background-color: #FFEB3B;
+      color: black;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 10vh;
+  }
+
+  #presentation div {
+      margin: 10%;
+
+  }
+
+  #presentation h1 {
+      font-size: 3em;
+      margin-top: 20vh;
+  }
+
+  #presentation p {
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Lora', serif;
+      font-size: 1.10em;
+  }
+
+
+  #presentation #copyright {
+      display: none;
+  }
+
+  #presentation p a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+  }
+
+  .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: black;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 10px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 10px;
 
     }
 
+    .button-social {
+      background: none;
+      padding: 0%;
+      border:none;
+    }
 
- /* Project 1 */
+    .button span {
+      cursor: pointer;
+    }
 
- #project-one {
-  background-color: black;
-  width: 100%;
-  height: 70vh;
-  overflow: scroll;
+    #projects-container {
+      width: 100%;
+      background-color: black;
+
+    }
+
+    .toolbar {
+      padding-top: 5%;
+      padding-left: 20%;
+    }
+
+    #project-container #projects {
+      padding: 10%;
+    }
+
+
+
+    #projects {
+      background-color: black;
+      height: 100%;
+      width: 100%;
+  }
+
+  #projects div {
+      margin: 10%;
+      margin-top: 5%;
+      border-bottom: 3px solid white;
+      transition: 0.5s;
+  }
+
+
+  #projects h3 a {
+      color: #FFEB3B;
+      text-decoration: none;
+  }
+
+  #projects a {
+      color: #FFEB3B;
+      text-decoration: none;
+  }
+  #projects h3 {
+      color: #FFEB3B;
+  }
+  #projects p {
+      color: #FFF;
+  }
+  h1 {
+      font-family: 'Oswald-Bold', sans-serif;
+
+  }
+
+
+/* Project 1 */
+
+#project-one {
+background-color: black;
+width: 100%;
+height: 70vh;
+overflow: scroll;
 }
 
 #project-one img {
@@ -131,11 +166,125 @@ color: black;
 height: 60vh;
 }
 #presentation-project-one div {
+margin: 10%;
+
+}
+
+.button-project-one {
+
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background-color: #FFF;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5%;
+  margin-bottom: 15%;
+
+  }
+
+  .button-project-one span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+
+  .button-project-one span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+
+  .button-project-one:hover span {
+  padding-right: 25px;
+  }
+
+  .button-project-one:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+#presentation-project-one div h1 {
+font-size: 2.5em;
+}
+#presentation-project-one div h2 {
+font-size: 2em;
+}
+#presentation-project-one div p {
+font-size: 1.3em;
+}
+
+
+
+/* Project 2 */
+
+#project-two {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#project-two img {
+margin: 3%;
+}
+
+#project-two div img {
+margin:10%;
+}
+
+#presentation-project-two {
+background-color: #FFEB3B;
+color: black;
+height: 100vh;
+width: 100%;
+}
+#presentation-project-two div {
+  margin: 10%;
+  }
+
+
+/* Project 3 */
+
+#project-three {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#project-three img {
+margin: 3%;
+}
+
+#project-three div img {
+margin:10%;
+}
+
+#presentation-project-three {
+background-color: #FFEB3B;
+color: black;
+height: 100vh;
+width: 100%;
+}
+#presentation-project-three div {
   margin: 10%;
 
   }
 
-  .button-project-one {
+  .button-project-three {
 
     display: inline-block;
     position: relative;
@@ -156,14 +305,14 @@ height: 60vh;
 
     }
 
-    .button-project-one span {
+    .button-project-three span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
     }
 
-    .button-project-one span:after {
+    .button-project-three span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -172,230 +321,116 @@ height: 60vh;
     transition: 0.5s;
     }
 
-    .button-project-one:hover span {
+    .button-project-three:hover span {
     padding-right: 25px;
     }
 
-    .button-project-one:hover span:after {
+    .button-project-three:hover span:after {
     opacity: 1;
     right: 0;
     }
 
-#presentation-project-one div h1 {
+    #presentation-project-three div p {
+      font-size: 1.3em;
+    }
+
+
+
+
+
+
+/* Project 4 */
+
+#project-four {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#project-four img {
+margin: 3%;
+}
+
+#project-four div img {
+margin:10%;
+}
+
+#presentation-project-four {
+background-color: #FFEB3B;
+color: black;
+
+}
+#presentation-project-four div {
+  margin: 10%;
+
+  }
+
+  .button-project-four {
+
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    background-color: #FFF;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5%;
+    margin-bottom: 15%;
+
+    }
+
+    .button-project-four span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+
+    .button-project-four span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+
+    .button-project-four:hover span {
+    padding-right: 25px;
+    }
+
+    .button-project-four:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+
+#presentation-project-four div h1 {
 font-size: 2.5em;
 }
-#presentation-project-one div h2 {
+#presentation-project-four div h2 {
 font-size: 2em;
 }
-#presentation-project-one div p {
+#presentation-project-four div p {
 font-size: 1.3em;
 }
 
 
 
-  /* Project 2 */
+/* Project 5 */
 
-  #project-two {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    overflow: scroll;
-}
-
-#project-two img {
-  margin: 3%;
-}
-
-#project-two div img {
-  margin:10%;
-}
-
-#presentation-project-two {
-  background-color: #FFEB3B;
-  color: black;
-  height: 100vh;
-  width: 100%;
-  }
-  #presentation-project-two div {
-    margin: 10%;
-    }
-
-
-  /* Project 3 */
-
-  #project-three {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    overflow: scroll;
-}
-
-#project-three img {
-  margin: 3%;
-}
-
-#project-three div img {
-  margin:10%;
-}
-
-#presentation-project-three {
-  background-color: #FFEB3B;
-  color: black;
-  height: 100vh;
-  width: 100%;
-  }
-  #presentation-project-three div {
-    margin: 10%;
-
-    }
-
-    .button-project-three {
-
-      display: inline-block;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 4px;
-      background-color: #FFF;
-      border: none;
-      color: black;
-      text-align: center;
-      font-size: 1.5em;
-      padding: 10px;
-      width: 150px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5%;
-      margin-bottom: 15%;
-
-      }
-
-      .button-project-three span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-      }
-
-      .button-project-three span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-      }
-
-      .button-project-three:hover span {
-      padding-right: 25px;
-      }
-
-      .button-project-three:hover span:after {
-      opacity: 1;
-      right: 0;
-      }
-
-      #presentation-project-three div p {
-        font-size: 1.3em;
-      }
-
-
-
-
-
-
-  /* Project 4 */
-
-  #project-four {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    overflow: scroll;
-}
-
-#project-four img {
-  margin: 3%;
-}
-
-#project-four div img {
-  margin:10%;
-}
-
-#presentation-project-four {
-  background-color: #FFEB3B;
-  color: black;
-
-  }
-  #presentation-project-four div {
-    margin: 10%;
-
-    }
-
-    .button-project-four {
-
-      display: inline-block;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 4px;
-      background-color: #FFF;
-      border: none;
-      color: black;
-      text-align: center;
-      font-size: 1.5em;
-      padding: 10px;
-      width: 150px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5%;
-      margin-bottom: 15%;
-
-      }
-
-      .button-project-four span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-      }
-
-      .button-project-four span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-      }
-
-      .button-project-four:hover span {
-      padding-right: 25px;
-      }
-
-      .button-project-four:hover span:after {
-      opacity: 1;
-      right: 0;
-      }
-
-#presentation-project-four div h1 {
-  font-size: 2.5em;
-}
-#presentation-project-four div h2 {
-  font-size: 2em;
-}
-#presentation-project-four div p {
-  font-size: 1.3em;
-}
-
-
-
- /* Project 5 */
-
- #project-five {
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-  overflow: scroll;
+#project-five {
+background-color: black;
+width: 100%;
+height: 100vh;
+overflow: scroll;
 }
 
 #project-five img {
@@ -412,55 +447,55 @@ color: black;
 
 }
 #presentation-project-five div {
-  margin: 10%;
+margin: 10%;
+
+}
+
+.button-project-five {
+
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background-color: #FFF;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5%;
+  margin-bottom: 15%;
 
   }
 
-  .button-project-five {
+  .button-project-five span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
 
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 4px;
-    background-color: #FFF;
-    border: none;
-    color: black;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 10px;
-    width: 150px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5%;
-    margin-bottom: 15%;
+  .button-project-five span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
 
-    }
+  .button-project-five:hover span {
+  padding-right: 25px;
+  }
 
-    .button-project-five span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    }
-
-    .button-project-five span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-    }
-
-    .button-project-five:hover span {
-    padding-right: 25px;
-    }
-
-    .button-project-five:hover span:after {
-    opacity: 1;
-    right: 0;
-    }
+  .button-project-five:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
 
 #presentation-project-five div h1 {
 font-size: 2.5em;
@@ -512,101 +547,137 @@ font-size: 1.3em;
 
 @media all and (max-device-width: 320px) {
 
-  #main {
 
-    background-color: #FFEB3B;
+
+#particles-js{
+  position: absolute;
+  top: 0%;
+  height: 70%;
+  opacity: 0.9;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#main {
+
+  background-color: #FFEB3B;
 }
 
 #presentation {
-    background-color: #FFEB3B;
-    color: black;
-    height: 90vh;
-    width: 100%;
-    margin-bottom: 10vh;
+  background-color: #FFEB3B;
+  color: black;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 10vh;
 }
 
 #presentation div {
-    margin: 10%;
+  margin: 10%;
 
+}
+
+.hidden {
+display:none;
 }
 
 #presentation h1 {
-    font-size: 3em;
-    margin-top: 20vh;
+  font-size: 3em;
+  margin-top: 20vh;
 }
 
 #presentation p {
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Lora', serif;
-    font-size: 1.10em;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Lora', serif;
+  font-size: 1.10em;
 }
 
 
 #presentation #copyright {
-    display: none;
+  display: none;
 }
 
 #presentation p a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: black;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 10px;
-    width: 150px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
 
-  }
+}
 
-  .button span {
-    cursor: pointer;
-  }
+.button-social {
+  background: none;
+  padding: 0%;
+  border:none;
+}
+
+.button span {
+  cursor: pointer;
+}
+
+#projects-container {
+  width: 100%;
+  background-color: black;
+
+}
+
+.toolbar {
+  padding-top: 5%;
+  padding-left: 20%;
+}
+
+#project-container #projects {
+  padding: 10%;
+}
 
 
 
-  #projects {
-    background-color: black;
-    PADDING-top: 5%;
-    margin-top: 100px;
-    height: 100%;
-    width: 100%;
+#projects {
+  background-color: black;
+  height: 100%;
+  width: 100%;
 }
 
 #projects div {
-    margin: 10%;
-    margin-top: 5%;
-    border-bottom: 3px solid white;
-    transition: 0.5s;
+  margin: 10%;
+  margin-top: 5%;
+  border-bottom: 3px solid white;
+  transition: 0.5s;
 }
 
 
 #projects h3 a {
-    color: #FFEB3B;
-    text-decoration: none;
+  color: #FFEB3B;
+  text-decoration: none;
 }
 
 #projects a {
-    color: #FFEB3B;
-    text-decoration: none;
+  color: #FFEB3B;
+  text-decoration: none;
 }
 #projects h3 {
-    color: #FFEB3B;
+  color: #FFEB3B;
 }
 #projects p {
-    color: #FFF;
+  color: #FFF;
 }
 h1 {
-    font-family: 'Oswald-Bold', sans-serif;
+  font-family: 'Oswald-Bold', sans-serif;
 
 }
 
@@ -687,53 +758,53 @@ margin: 10%;
 
 .button-project-three {
 
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 4px;
-  background-color: #FFF;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5%;
-  margin-bottom: 15%;
+display: inline-block;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 4px;
+background-color: #FFF;
+border: none;
+color: black;
+text-align: center;
+font-size: 1.5em;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5%;
+margin-bottom: 15%;
 
-  }
+}
 
-  .button-project-three span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  }
+.button-project-three span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
 
-  .button-project-three span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  }
+.button-project-three span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
 
-  .button-project-three:hover span {
-  padding-right: 25px;
-  }
+.button-project-three:hover span {
+padding-right: 25px;
+}
 
-  .button-project-three:hover span:after {
-  opacity: 1;
-  right: 0;
-  }
+.button-project-three:hover span:after {
+opacity: 1;
+right: 0;
+}
 
-  #presentation-project-three div p {
-    font-size: 1.3em;
-  }
+#presentation-project-three div p {
+  font-size: 1.3em;
+}
 
 
 
@@ -769,49 +840,49 @@ margin: 10%;
 
 .button-project-four {
 
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 4px;
-  background-color: #FFF;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5%;
-  margin-bottom: 15%;
+display: inline-block;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 4px;
+background-color: #FFF;
+border: none;
+color: black;
+text-align: center;
+font-size: 1.5em;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5%;
+margin-bottom: 15%;
 
-  }
+}
 
-  .button-project-four span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  }
+.button-project-four span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
 
-  .button-project-four span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  }
+.button-project-four span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
 
-  .button-project-four:hover span {
-  padding-right: 25px;
-  }
+.button-project-four:hover span {
+padding-right: 25px;
+}
 
-  .button-project-four:hover span:after {
-  opacity: 1;
-  right: 0;
-  }
+.button-project-four:hover span:after {
+opacity: 1;
+right: 0;
+}
 
 #presentation-project-four div h1 {
 font-size: 1.7;
@@ -833,589 +904,881 @@ font-size: 1.7;
 
 @media all and (min-device-width: 480px) {  /* DESKTOP */
 
-  /* .loader {
-      position : fixed;
-      z-index: 9999;
-      background : url('Images/Spinner-1s-200px.gif') 50% 50% no-repeat;
-      top : 0px;
-      left : 0px;
-      height : 100%;
-      width : 100%;
-      cursor : wait;
-      } */
 
-  #main {
-      display: flex;
-      background-color: #FFEB3B;
-  }
+#particles-js{
 
-  #presentation {
-      background-color: #FFEB3B;
-      color: black;
-      height: 100vh;
-      width: 100%;
-  }
+  position: absolute;
+  width: 49%;
+  height: 100%;
+  opacity: 0.9;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 
-  #presentation div {
-      margin: 10%;
-  }
+}
 
-  #presentation h1 {
-      font-size: 5em;
-      margin-top: 25vh;
-  }
-  #presentation p {
-      font-family: 'Oswald', sans-serif;
-      font-family: 'Lora', serif;
-      font-size: 1.10em;
-  }
-  #presentation #copyright {
-      display: none;
-  }
-
-  #presentation p a {
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-  }
-
-  .button {
-      display: inline-block;
-      border-radius: 4px;
-      background-color: black;
-      border: none;
-      color: #FFFFFF;
-      text-align: center;
-      font-size: 1.5em;
-      padding: 10px;
-      width: 150px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-    }
-
-    .button span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-
-    .button span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-
-    .button:hover span {
-      padding-right: 25px;
-    }
-
-    .button:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
+.scale-anm {
+  transform: scale(1);
+}
 
 
-  #projects {
-      background-color: black;
-      width: 100%;
-  }
+#main {
+    display: flex;
+    background-color: #FFEB3B;
+}
 
-  #projects div {
-      margin: 5%;
-      height: 10%;
-      border-bottom: 3px solid white;
-      transition: 0.5s;
-  }
+#presentation {
+    background-color: #FFEB3B;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    min-width: 430px;
+    min-height: 765px;
+}
 
-  #projects div:hover {
-      margin: 5%;
-      border-bottom: 6px solid white;
-  }
-  #projects h3 a {
-      color: #FFEB3B;
-      text-decoration: none;
-  }
-  #projects a {
-      color: #FFEB3B;
-      text-decoration: none;
-  }
+#presentation div {
+    margin: 10%;
+    z-index: 6;
+}
 
-  #projects h3 {
-      color: #FFEB3B;
-  }
-  #projects p {
-      color: #FFF;
-  }
-  h1 {
-      font-family: 'Oswald-Bold', sans-serif;
+#presentation h1 {
+    font-size: 5em;
+    margin-top: 25vh;
+    font-family: 'Oswald', sans-serif;
+}
+#presentation p {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Lora', serif;
+    font-size: 1.10em;
+
+}
+#presentation #copyright {
+    display: none;
+}
+
+#presentation p a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 6;
+}
+
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 
   }
 
-
-
-
-
-
-
-
-  /* PROJET 1 */
-
-  #project-one {
-          background-color: black;
-          width: 100%;
-          height: 100vh;
-          overflow: scroll;
+  .button-social {
+    background: none;
+    padding: 0%;
+    border:none;
   }
 
-  /* #TGCF-Video {
-    margin: 50%;
-  } */
+  .button-social span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    z-index: 6;
+  }
 
-  #project-one img {
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    z-index: 6;
+  }
+
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    z-index: 6;
+  }
+
+
+
+  #projects-container {
+    width: 100%;
+    background-color: black;
+
+  }
+
+  .toolbar {
+    padding-top: 2%;
+    padding-left: 5%;
+  }
+
+  #project-container #projects {
+    padding: 10%;
+  }
+
+
+#projects{
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+}
+
+#projects div {
+    margin: 5%;
+    height: 10%;
+    min-width: 465px;
+    padding: 0%;
+    min-height: 75px;
+    border-bottom: 3px solid white;
+    transition: 0.5s;
+}
+
+#projects div:hover {
+    margin: 5%;
+    border-bottom: 6px solid white;
+}
+#projects h3 a {
+    color: #FFEB3B;
+    text-decoration: none;
+}
+#projects a {
+    color: #FFEB3B;
+    text-decoration: none;
+}
+
+#projects h3 {
+    color: #FFEB3B;
+}
+#projects p {
+    color: #FFF;
+}
+h1 {
+    font-family: 'Oswald-Bold', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+/* PROJET 1 */
+
+#project-one {
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        min-width: 430px;
+        min-height: 765px;
+}
+
+#project-one img {
+  margin: 3%;
+}
+
+#project-one div{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-one div img {
+    margin:10%;
+}
+
+
+#project-one div button {
+    margin-top: 100%;
+}
+
+
+#presentation-project-one {
+    background-color: #FFEB3B;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    min-width: 430px;
+    min-height: 765px;
+}
+#presentation-project-one div {
+    margin: 10%;
+}
+
+#presentation-project-one h1 {
+    font-size: 5em;
+    margin-top: 20vh;
+}
+#presentation-project-one p {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+
+.button-project-one {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #FFF;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button-project-one span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button-project-one span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button-project-one:hover span {
+    padding-right: 25px;
+  }
+
+  .button-project-one:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* PROJET 2 */
+
+#project-two {
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        min-width: 430px;
+
+}
+
+#project-two img {
     margin: 3%;
+}
+
+#project-two div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-two div img {
+    margin:10%;
+}
+
+
+#presentation-project-two {
+    background-color: #FFEB3B;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    min-width: 430px;
+    height: 100vh;
+    overflow: scroll;
+}
+#presentation-project-two div {
+    margin: 10%;
+}
+
+#presentation-project-two h1 {
+    font-size: 5em;
+    margin-top: 20vh;
+}
+#presentation-project-two p {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+
+.button-project-two {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #FFF;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5%;
   }
 
-  #project-one div{
-      height: 100vh;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  .button-project-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
   }
 
-  #project-one div img {
-      margin:10%;
+  .button-project-two span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
   }
 
-
-  #project-one div button {
-      margin-top: 100%;
+  .button-project-two:hover span {
+    padding-right: 25px;
   }
 
-
-  #presentation-project-one {
-      background-color: #FFEB3B;
-      color: black;
-      height: 100vh;
-      width: 100%;
+  .button-project-two:hover span:after {
+    opacity: 1;
+    right: 0;
   }
-  #presentation-project-one div {
-      margin: 10%;
-  }
-
-  #presentation-project-one h1 {
-      font-size: 5em;
-      margin-top: 20vh;
-  }
-  #presentation-project-one p {
-      font-family: 'Oswald', sans-serif;
-      font-family: 'Lora', serif;
-  }
-
-
-  .button-project-one {
-      display: inline-block;
-      border-radius: 4px;
-      background-color: #FFF;
-      border: none;
-      color: black;
-      text-align: center;
-      font-size: 1.5em;
-      padding: 10px;
-      width: 150px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-    }
-
-    .button-project-one span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-
-    .button-project-one span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-
-    .button-project-one:hover span {
-      padding-right: 25px;
-    }
-
-    .button-project-one:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
 
   /* PROJET 3 */
 
-  #project-three {
-          background-color: black;
-          width: 100%;
-          height: 100vh;
-          overflow: scroll;
-  }
-
-  #project-three img {
-      margin: 3%;
-  }
-
-  #project-three div {
-      height: 100vh;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  #project-three div img {
-      margin:10%;
-  }
-
-
-
-
-  #presentation-project-three {
-      background-color: #FFEB3B;
-      color: black;
-      height: 100vh;
-      width: 100%;
-  }
-  #presentation-project-three div {
-      margin: 10%;
-  }
-
-  #presentation-project-three h1 {
-      font-size: 5em;
-      margin-top: 20vh;
-  }
-  #presentation-project-three p {
-      font-family: 'Oswald', sans-serif;
-      font-family: 'Lora', serif;
-  }
-
-
-  .button-project-three {
-      display: inline-block;
-      border-radius: 4px;
-      background-color: #FFF;
-      border: none;
-      color: black;
-      text-align: center;
-      font-size: 1.5em;
-      padding: 10px;
-      width: 150px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5%;
-    }
-
-    .button-project-three span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-
-    .button-project-three span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-
-    .button-project-three:hover span {
-      padding-right: 25px;
-    }
-
-    .button-project-three:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
-
-    /* PROJET 3 */
-
-  #project-three {
-      background-color: black;
-      width: 100%;
-      height: 100vh;
-      overflow: scroll;
-  }
-
-  #project-three img {
-  margin: 3%;
-  }
-
-  #project-three div {
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-
-  #project-three div img {
-  margin:10%;
-  }
-
-
-  #presentation-project-three {
-  background-color: #FFEB3B;
-  color: black;
-  height: 100vh;
-  width: 100%;
-  }
-  #presentation-project-three div {
-  margin: 10%;
-  }
-
-  #presentation-project-three h1 {
-  font-size: 5em;
-  margin-top: 20vh;
-  }
-  #presentation-project-three p {
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Lora', serif;
-  }
-
-
-  .button-project-three {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #FFF;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  }
-
-  .button-project-three span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  }
-
-  .button-project-three span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  }
-
-  .button-project-three:hover span {
-  padding-right: 25px;
-  }
-
-  .button-project-three:hover span:after {
-  opacity: 1;
-  right: 0;
-  }
-
-  }
-
-  /* Projet 4 */
-
-
-  #project-four {
+#project-three {
     background-color: black;
     width: 100%;
     height: 100vh;
     overflow: scroll;
-  }
+    min-width: 430px;
+    min-height: 765px;
+}
 
-  #project-four img {
-  margin: 3%;
-  }
+#project-three img {
+margin: 3%;
+}
 
-  #project-four div{
-  height: 100vh;
+#project-three div {
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-
-  #project-four div img {
-  margin:10%;
-  }
-
-
-  #project-four div button {
-
-  }
+#project-three div img {
+margin:10%;
+}
 
 
-  #presentation-project-four {
-  background-color: #FFEB3B;
-  color: black;
-  height: 100vh;
+#presentation-project-three {
+background-color: #FFEB3B;
+color: black;
+height: 100vh;
+width: 100%;
+min-width: 430px;
+height: 100vh;
+overflow: scroll;
+}
+#presentation-project-three div {
+margin: 10%;
+}
+
+#presentation-project-three h1 {
+font-size: 5em;
+margin-top: 20vh;
+}
+#presentation-project-three p {
+font-family: 'Oswald', sans-serif;
+font-family: 'Lora', serif;
+}
+
+
+.button-project-three {
+display: inline-block;
+border-radius: 4px;
+background-color: #FFF;
+border: none;
+color: black;
+text-align: center;
+font-size: 1.5em;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button-project-three span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button-project-three span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button-project-three:hover span {
+padding-right: 25px;
+}
+
+.button-project-three:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+
+
+/* Projet 4 */
+
+
+#project-four {
+  background-color: black;
   width: 100%;
-  }
-  #presentation-project-four div {
-  margin: 10%;
-  }
+  height: 100vh;
+  overflow: scroll;
+  min-width: 430px;
+  min-height: 765px;
+}
 
-  #presentation-project-four h1 {
-  font-size: 5em;
-  margin-top: 20vh;
-  }
-  #presentation-project-four p {
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Lora', serif;
-  }
+#project-four img {
+margin: 3%;
+}
 
+#project-four div{
+height: 100vh;
 
-  .button-project-four {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #FFF;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  }
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
-  .button-project-four span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  }
-
-  .button-project-four span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  }
-
-  .button-project-four:hover span {
-  padding-right: 25px;
-  }
-
-  .button-project-four:hover span:after {
-  opacity: 1;
-  right: 0;
-  }
+#project-four div img {
+margin:10%;
+}
 
 
-  /* Projet 5 */
 
 
-  #project-five {
+#presentation-project-four {
+background-color: #FFEB3B;
+color: black;
+height: 100vh;
+width: 100%;
+min-width: 430px;
+height: 100vh;
+overflow: scroll;
+}
+#presentation-project-four div {
+margin: 10%;
+}
+
+#presentation-project-four h1 {
+font-size: 5em;
+margin-top: 20vh;
+}
+#presentation-project-four p {
+font-family: 'Oswald', sans-serif;
+font-family: 'Lora', serif;
+}
+
+
+.button-project-four {
+display: inline-block;
+border-radius: 4px;
+background-color: #FFF;
+border: none;
+color: black;
+text-align: center;
+font-size: 1.5em;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button-project-four span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button-project-four span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button-project-four:hover span {
+padding-right: 25px;
+}
+
+.button-project-four:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+
+/* Projet 5 */
+
+
+#project-five {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  min-width: 430px;
+  min-height: 765px;
+}
+
+#project-five img {
+margin: 3%;
+}
+
+#project-five div{
+height: 100vh;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#project-five div img {
+margin:10%;
+}
+
+
+#project-five div button {
+margin-bottom:  50%;
+}
+
+
+#presentation-project-five {
+background-color: #FFEB3B;
+color: black;
+height: 100vh;
+width: 100%;
+min-width: 430px;
+height: 100vh;
+overflow: scroll;
+}
+#presentation-project-five div {
+margin: 10%;
+}
+
+#presentation-project-five h1 {
+font-size: 5em;
+margin-top: 20vh;
+}
+#presentation-project-five p {
+font-family: 'Oswald', sans-serif;
+font-family: 'Lora', serif;
+}
+
+
+.button-project-five {
+display: inline-block;
+border-radius: 4px;
+background-color: #FFF;
+border: none;
+color: black;
+text-align: center;
+font-size: 1.5em;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button-project-five span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button-project-five span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button-project-five:hover span {
+padding-right: 25px;
+}
+
+.button-project-five:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* PROJET 6 */
+
+  #project-six {
     background-color: black;
     width: 100%;
-    height: 100vh;
-    overflow: scroll;
-  }
+    /* height: 100vh; */
+    /* overflow: scroll; */
+    /* margin-top: 50%; */
+    min-width: 430px;
+    min-height: 765px;
+}
 
-  #project-five img {
-  margin: 3%;
-  }
+#project-six img {
+margin: 3%;
+}
 
-  #project-five div{
-  height: 100vh;
+#project-six div {
+/* height: 100vh; */
+display: flex;
+flex-direction: column;
+align-items: center;
+color: #FFF;
+vertical-align: middle;
+text-align: left;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
+#project-six div img {
+margin:10%;
+}
 
-  #project-five div img {
-  margin:10%;
-  }
+#project-six div div  {
 
-
-  #project-five div button {
-  margin-bottom:  50%;
-  }
-
-
-  #presentation-project-five {
-  background-color: #FFEB3B;
-  color: black;
-  height: 100vh;
-  width: 100%;
-  }
-  #presentation-project-five div {
-  margin: 10%;
-  }
-
-  #presentation-project-five h1 {
-  font-size: 5em;
-  margin-top: 20vh;
-  }
-  #presentation-project-five p {
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Lora', serif;
-  }
+  justify-content: center;
+  list-style: none;
+  text-align: left;
+}
 
 
-  .button-project-five {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #FFF;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  }
+#presentation-project-six {
+background-color: #FFEB3B;
+color: black;
+margin-top: 10%;
+/* height: 100vh; */
+width: 100%;
+min-width: 430px;
+height: 100vh;
+/* overflow: scroll; */
+}
+#presentation-project-six div {
+margin: 10%;
+}
 
-  .button-project-five span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  }
+#presentation-project-six h1 {
+font-size: 5em;
+margin-top: 20vh;
+}
+#presentation-project-six p {
+font-family: 'Oswald', sans-serif;
+font-family: 'Lora', serif;
+}
 
-  .button-project-five span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  }
 
-  .button-project-five:hover span {
-  padding-right: 25px;
-  }
+.button-project-six {
+display: inline-block;
+border-radius: 4px;
+background-color: #FFF;
+border: none;
+color: black;
+text-align: center;
+font-size: 1.5em;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
 
-  .button-project-five:hover span:after {
-  opacity: 1;
-  right: 0;
-  }
+.button-project-six span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
 
+.button-project-six span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button-project-six:hover span {
+padding-right: 25px;
+}
+
+.button-project-six:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+
+
+
+
+
+
+
+  /* PROJET 7 */
+
+  #project-seven {
+    background-color: black;
+    width: 100%;
+    /* height: 100vh; */
+    /* overflow: scroll; */
+    /* margin-top: 50%; */
+    min-width: 430px;
+    min-height: 765px;
+}
+
+#project-seven img {
+margin: 3%;
+}
+
+#project-seven div {
+/* height: 100vh; */
+display: flex;
+flex-direction: column;
+align-items: center;
+color: #FFF;
+vertical-align: middle;
+text-align: left;
+}
+
+#project-seven div img {
+margin:10%;
+}
+
+#project-seven div div  {
+
+  justify-content: center;
+  list-style: none;
+  text-align: left;
+}
+
+
+#presentation-project-seven {
+background-color: #FFEB3B;
+color: black;
+margin-top: 10%;
+/* height: 100vh; */
+width: 100%;
+min-width: 430px;
+height: 100vh;
+/* overflow: scroll; */
+}
+#presentation-project-seven div {
+margin: 10%;
+}
+
+#presentation-project-seven h1 {
+font-size: 5em;
+margin-top: 20vh;
+}
+#presentation-project-seven p {
+font-family: 'Oswald', sans-serif;
+font-family: 'Lora', serif;
+}
+
+
+.button-project-seven {
+display: inline-block;
+border-radius: 4px;
+background-color: #FFF;
+border: none;
+color: black;
+text-align: center;
+font-size: 1.5em;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button-project-seven span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button-project-seven span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button-project-seven:hover span {
+padding-right: 25px;
+}
+
+.button-project-seven:hover span:after {
+opacity: 1;
+right: 0;
+}
